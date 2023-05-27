@@ -5581,6 +5581,7 @@ var AblePlayerInstances = [];
 				}				
 				continue;
 			}
+			track.src = encodeURIComponent(track.src)
 			var trackSrc = track.src;
 			loadingPromise = this.loadTextObject(track.src); // resolves with src, trackText
 			loadingPromises.push(loadingPromise.catch(function (src) {
